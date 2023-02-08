@@ -1,6 +1,185 @@
-/*#carrocel*/
+.card-content{
+    float: left;
+    position: relative;
+}
 
-@charset "UTF-8";
+.card-caption{
+  position: absolute;
+   top: 177px;    
+}
+
+.card-caption h4{
+  text-shadow: 0 1px 3px rgb(0 0 0 / 80%);
+  color: #fff!important;
+  padding: 7px;
+}
+
+.br-card {
+  --card-padding: var(--spacing-scale-2x);
+  --card-height-fixed: 350px;
+  background: var(--background);
+  box-shadow: var(--surface-shadow-sm);
+  color: var(--color);
+  margin-bottom: var(--spacing-scale-2x);
+  padding-bottom: 12px;
+}
+.br-card .card-content,
+.br-card .front .content {
+  padding: 0;
+}
+.br-card .card-content *:last-child,
+.br-card .front .content *:last-child {
+  margin-bottom: 0;
+}
+.br-card .front .header,
+.br-card .card-header {
+  padding: var(--card-padding) var(--card-padding) 0;
+}
+.br-card .front .footer,
+.br-card .card-footer {
+  padding: 0 var(--card-padding) var(--card-padding);
+}
+.br-card.h-fixed .card-content {
+  max-height: var(--card-height-fixed);
+  overflow-y: auto;
+}
+.br-card.h-fixed .card-content::-webkit-scrollbar {
+  height: var(--spacing-scale-base);
+  width: var(--spacing-scale-base);
+}
+.br-card.h-fixed .card-content::-webkit-scrollbar-track {
+  background: var(--gray-10);
+}
+.br-card.h-fixed .card-content::-webkit-scrollbar-thumb {
+  background: var(--gray-30);
+}
+.br-card.h-fixed .card-content:hover::-webkit-scrollbar-thumb {
+  background: var(--gray-40);
+}
+.br-card.h-fixed .card-footer {
+  padding-top: var(--card-padding);
+}
+.br-card.hover:hover {
+  background-image: linear-gradient(rgba(var(--color-rgb), var(--hover)), rgba(var(--color-rgb), var(--hover)));
+}
+.br-card.inverted, .br-card.dark-mode {
+  --color: var(--color-dark);
+  --color-rgb: var(--color-dark-rgb);
+  --text-color: var(--color);
+  --interactive: var(--interactive-dark);
+  --interactive-rgb: var(--interactive-dark-rgb);
+  --visited: var(--visited-dark);
+  --hover: var(--hover-dark);
+  --pressed: var(--pressed-dark);
+  --focus-color: var(--focus-color-dark);
+  --focus: var(--focus-color);
+}
+
+/*# sourceMappingURL=card.css.map*/
+
+.main-content a {
+  text-decoration: none;
+}
+
+.transmissoes a{
+  text-align: right;
+  float: right!important;
+}
+
+.link-com-linha:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -2px;
+  height: 2px;
+  width: 50px;
+  background-color: #2957a4;
+  right: 0;
+}
+
+.links-acesso-rapido .br-card{
+  background-color: #fff;
+  display: flex;
+  max-width: 164px;
+  box-shadow: 1px 0px 15px -4px #bdbdbd;
+  height: 164px;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.links-acesso-rapido .fa-lg {
+  font-size: 4.33333em;
+  background-position: 0px 0px;
+  width: 64px;
+  height: 64px;
+}
+
+.links-acesso-rapido .card-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  
+}
+
+.links-acesso-rapido .card-content{  
+  float: none;
+  position: relative;  
+}
+
+.links-acesso-rapido .card-content P{
+  font-weight: 800;
+}
+
+.links-acesso-rapido .card-content p{
+  text-align: center;
+}
+
+.br-header .header-menu .header-subtitle {
+    font-size: 12px;
+}
+
+/* max-width  */
+@media screen and (max-width: 320px) and (max-width: 480px) {
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+	  width:0px;
+	}
+}
+
+/* min-width */
+@media screen and (max-width: 481px) and (max-width: 768px) {
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+	  width:400px;
+	}
+}
+
+/* min-width & max-width */
+@media screen and (max-width: 769px) and (max-width: 1024px) {
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+	  width:970px;
+	}
+}
+
+@media screen and (max-width: 1025px) and (max-width: 1200px) {
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+	  width:1000px;
+	}
+}
+
+@media screen and (min-width: 1201px){
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+	  width:1250px;
+	}
+}
+
+/* Inicio Carrosel*/
+
+
 .br-carousel {
   --carousel-button-margin: var(--spacing-scale-default);
   --carousel-buton-icon-size: var(--–icon-size-base);
@@ -282,20 +461,5 @@
 
 /*# sourceMappingURL=carousel.css.map*/
 
-/*# fim carrocel*/
+/* Fim Carrosel */
 
-.br-header .header-menu .header-subtitle {
-    font-size: 12px;
-}
-
-@media (max-width: 480px) {
-    .text {
-      font-size: 16px;
-    }   
-  }
-
-  @media (max-width: 480px) {
-    .text {
-      font-size: 16px;
-    }
-  }
