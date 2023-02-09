@@ -14,15 +14,7 @@
   padding: 7px;
 }
 
-.br-card {
-  --card-padding: var(--spacing-scale-2x);
-  --card-height-fixed: 350px;
-  background: var(--background);
-  box-shadow: var(--surface-shadow-sm);
-  color: var(--color);
-  margin-bottom: var(--spacing-scale-2x);
-  padding-bottom: 12px;
-}
+
 .br-card .card-content,
 .br-card .front .content {
   padding: 0;
@@ -75,6 +67,10 @@
   --focus: var(--focus-color);
 }
 
+.links-acesso-rapido .card-content{
+  width: 130px;
+}
+
 /*# sourceMappingURL=card.css.map*/
 
 .main-content a {
@@ -113,7 +109,7 @@
 }
 
 .links-acesso-rapido .fa-lg {
-  font-size: 4.33333em;
+  font-size: 3.5  em;
   background-position: 0px 0px;
   width: 64px;
   height: 64px;
