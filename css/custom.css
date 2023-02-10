@@ -506,6 +506,21 @@ font-size: 15px;
 
 /* fim banner info */
 
+/* inicio footer */
+
+.br-footer .br-list.horizontal .br-item, .br-footer .br-list.horizontal .br-list .br-item {
+  min-height: 0;
+  padding: 0;
+  padding: 7px 0px 7px;
+}
+
+.social-network .social-network-title{
+  margin-bottom: 0 !important;
+}
+
+/* fim footer */
+
+
 
 /* max-width  */
 @media screen and (max-width: 320px) and (max-width: 480px) {
@@ -541,6 +556,13 @@ font-size: 15px;
 /*.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
   width:1250px;
 }*/
+}
+
+@media (min-width: 1201px){
+  .banner {
+    margin-left: -8.4%;
+    margin-right: -8%;
+  }
 }
 
 @media (max-width: 1200px){
