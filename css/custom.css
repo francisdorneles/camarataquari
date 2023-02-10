@@ -1,3 +1,7 @@
+ul{
+  padding: 0;
+}
+
 .card-content{
   float: left;
   position: relative;
@@ -442,6 +446,14 @@ font-size: 70px;
 color: #fff;
 }
 
+/* fim transmissoes*/
+
+/* inicio noticias */
+
+.noticias h3{
+  margin: 0px 0px 19px;
+}
+
 .noticias .card-content img{
 display: block;
   max-width: 100%;
@@ -467,34 +479,34 @@ color: #fff;
 font-weight: 800;
 }
 
-/* fim transmissoes */
+/* fim noticias */
 
 /* banner info */
 
 .banner{
-margin-left: -7.3%;
-margin-right: -6.25%;
-background-color: #eaf3fa;
-margin-top: 4% !important;
+  margin-left: -7.3%;
+  margin-right: -6.25%;
+  background-color: #eaf3fa;
+  margin-top: 4% !important;
 }
 
 .banner .banner-img{
-margin-left: 19%;
+  margin-left: 19%;
 }
 
 .banner .banner-titulo{
-margin-top: 60px;
+margin-top: 35px;
 }
 
 .banner .banner-titulo span{
-transition: border .5s ease-in-out;
-border-bottom: 4px solid #cbd7e9;
-display: inline;
-padding-bottom: 1px;
-font-size: 27px;
-padding-right: 0px;
-font-weight: 800;
-color: #333;
+  transition: border .5s ease-in-out;
+  border-bottom: 4px solid #cbd7e9;
+  display: inline;
+  padding-bottom: 1px;
+  font-size: 27px;
+  padding-right: 0px;
+  font-weight: 800;
+  color: #333;
 }
 
 .banner .banner-texto{
@@ -520,6 +532,30 @@ font-size: 15px;
 
 /* fim footer */
 
+
+/* formulario contato */
+.contato .contato-informacoes .contato-subtitulo-2 {
+  margin-bottom: 40px;
+}
+
+.contato .contato-subtitulo-1{
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.contato .contato-ul li:first-child{
+  font-weight: 700; 
+  font-size: 19px; 
+}
+
+.contato .contato-ul li{
+  padding-bottom: 10px;
+}
+.contato .contato-link{
+  font-weight: 600; 
+}
+
+/* fim formulario contato */
 
 
 /* max-width  */
