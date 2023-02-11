@@ -558,6 +558,49 @@ font-size: 15px;
 /* fim formulario contato */
 
 
+/* inicio mesa diretora */
+.mesa-diretora .mesa-diretora-titulo{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mesa-diretora img{
+  border-radius: 50% !important;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+  width: 12rem;
+  margin: auto;
+  display: block;
+}
+
+.mesa-diretora .nome-vereador{
+  font-weight: 700;
+}
+
+.mesa-diretora .vereadores{
+  margin: 0 auto;
+}
+
+.mesa-diretora .vereadores .texto, .mesa-diretora .vereadores .nome-vereador{
+  text-align: center;
+}
+
+.mesa-diretora .comissoes li {
+    font-weight: 600;
+  }
+
+
+/* fim mesa diretora */
+
+
+/* inicio menu acesso rapido mobile*/
+
+.br-header .header-actions .header-functions .br-list, .br-header .header-actions .header-links .br-list {
+  background: var(--background);
+  left: -8em;
+}
+/* fim menu acesso rapido mobile*/
+
 /* max-width  */
 @media screen and (max-width: 320px) and (max-width: 480px) {
 /*.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
