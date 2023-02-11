@@ -592,6 +592,28 @@ font-size: 15px;
 
 /* fim mesa diretora */
 
+/* inicio vereador */
+
+
+.vereador .informacoes-vereador .informacoes-vereador-label{
+  width: 120px;
+  display: inline-block;
+}
+
+.informacoes-vereador-item, .informacoes-vereador-item-historico{
+  text-align: justify;
+  list-style: none;
+  padding-left: 0;
+  line-height: 180%;
+}
+
+.informacoes-vereador-item-historico .informacoes-vereador-valor{
+  
+}
+
+
+/* inicio vereador */
+
 
 /* inicio menu acesso rapido mobile*/
 
