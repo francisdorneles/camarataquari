@@ -4,7 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Template básico</title>
+    <title>Câmara Municipal de Taquari</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">    
+
     <!-- Fonte Rawline-->
     <link rel="stylesheet" href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
     <!-- Fonte Raleway-->
@@ -17,34 +20,36 @@
   <body>
     <div class="template-base">
       <nav class="br-skiplink">
-        <a class="br-item" href="#main-content" accesskey="1">Ir para o conteúdo (1/4)
+        <a class="br-item" href="#main-content" accesskey="1">Ir para o conteúdo (1/3)
             <span class="br-tag text ml-1">1</span>
         </a>
-        <a class="br-item" href="#header-navigation" accesskey="2">Ir para o menu (2/4) 
+        <a class="br-item" href="#header-navigation" accesskey="2">Ir para o menu (2/3) 
           <span class="br-tag text ml-1">2</span>
         </a>          
-        <a class="br-item" href="#footer" accesskey="4">Ir para o rodapé (3/4) 
-          <span class="br-tag text ml-1">4</span>
+        <a class="br-item" href="#footer" accesskey="4">Ir para o rodapé (3/3) 
+          <span class="br-tag text ml-1">3</span>
         </a>
       </nav>
-      <header class="br-header mb-4" id="header" data-sticky="data-sticky">
+      <header class="br-header" id="header" data-sticky="data-sticky">
         <div class="container-lg">
-          <div class="header-top">
+          <div class="header-top mr-md-10xh ml-md-10xh">            
             <div class="header-logo">
-              <img src="assets/img/logo.png" alt="Logo"/>              
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="Logo"/>
+              </a>
             </div>
-            <div class="header-actions">
+            <div class="header-actions ">
               <div class="header-links dropdown">
                 <button class="br-button circle small" type="button" data-toggle="dropdown" aria-label="Abrir Acesso Rápido"><i class="fas fa-ellipsis-v" aria-hidden="true"></i></button>
                 <div class="br-list">
                   <div class="header">
                     <div class="title">Acesso Rápido</div>
-                  </div><a class="br-item" href="javascript:void(0)">Sessões ao Vivo</a><a class="br-item" href="javascript:void(0)">Webmail</a><a class="br-item" href="contato.html">Contato</a>
+                  </div><a class="br-item" href="https://www.youtube.com/@camarataquari9681/streams">Sessões ao Vivo</a><a class="br-item" href="https://www.youtube.com/@camarataquari9681/streams">Webmail</a><a class="br-item" href="contato.html">Contato</a>
                 </div>
               </div>                                         
             </div>
           </div>
-          <div class="header-bottom">
+          <div class="header-bottom mr-md-10xh ml-md-10xh">
             <div class="header-menu">
               <div class="header-menu-trigger" id="header-navigation">
                 <button class="br-button small circle" type="button" aria-label="Menu" data-toggle="menu" data-target="#main-navigation" id="navigation"><i class="fas fa-bars" aria-hidden="true"></i>
@@ -52,21 +57,27 @@
               </div>
               <div class="header-info">
                 <div class="header-title">Câmara Municipal de Taquari</div>
-                <div class="header-subtitle">Poder Legislativo do município de Taquari</div>
+                <div class="header-subtitle">Poder Legislativo do Município de Taquari</div>
               </div>
             </div>
-                        
+            <div class="header-social-network">              
+              <a class="br-button circle" target="_blank" href="https://www.facebook.com/camaravereadorestaquari" aria-label="Compartilhar por Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              <a class="br-button circle" target="_blank" href="https://www.instagram.com/camarataquari/?hl=pt" aria-label="Compartilhar por Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              <a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>                 
+            </div>         
           </div>
         </div>
       </header>
-      <main class="d-flex flex-fill mb-5" id="main">
+      <main class="d-flex flex-fill mr-md-10xh ml-md-10xh" id="main">
         <div class="container-lg d-flex">
           <div class="row">
             <div class="br-menu" id="main-navigation">
               <div class="menu-container">
                 <div class="menu-panel">
                   <div class="menu-header">
-                    <div class="menu-title"><img src="assets/img/logo.png" alt="Logo"/><span>Câmara Municipal de Taquari</span></div>
+                    <a href="index.html">
+                      <div class="menu-title"><img src="assets/img/logo.png" alt="Logo"/><span>Câmara Municipal de Taquari</span></div>
+                    </a>
                     <div class="menu-close">
                       <button class="br-button circle" type="button" aria-label="Fechar o menu" data-dismiss="menu"><i class="fas fa-times" aria-hidden="true"></i></button>
                     </div>
@@ -76,11 +87,8 @@
                       <a class="menu-item" href="javascript: void(0)"><span class="content">Institucional</span></a>
                       <ul>
                         <li><a href="camara.html" class="menu-item" href="javascript: void(0)"><span class="content">A Câmara</span></a></li>
-                        <li><a href="historicovereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Histórico de Vereadores</span></a></li>                                                
-                        <li><a class="menu-item" href="contato.html"><span class="content">Fale com a Câmara</span></a></li>
-                        <li><a class="menu-item" href="mesa-diretora.html"><span class="content">Mesa Diretora</span></a></li>
-                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/servidoresLotacao/servidores"></span><span class="content">Quadro de Servidores</span></a></li>							
-                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria"></span><span class="content">Ouvidoria</span></a></li>							
+                        <li><a href="historicovereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Histórico de Vereadores</span></a></li>                                                                                                
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/servidoresLotacao/servidores"></span><span class="content">Quadro de Servidores</span></a></li>							                        
                       </ul>
                     </div>
                     <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Transparência</span></a>
@@ -99,21 +107,37 @@
                     </div>
                     <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Vereadores</span></a>
                       <ul>
-                        <li><a href="vereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Quem são</span></a></li>							  							  
+                        <li><a href="vereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Vereadores(as) em Exercício</span></a></li>							  							  
+                        <li><a class="menu-item" href="mesa-diretora.html"><span class="content">Mesa Diretora</span></a></li>
+                        <li><a class="menu-item" href="comissoes.html"><span class="content">Comissôes</span></a></li>
                       </ul>
                     </div>
                     <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Atividade Parlamentar</span></a>
                       <ul>
                         <li><a class="menu-item" href="https://camarataquari.cespro.com.br/"><span class="content">Leis</span></a></li>
-                        <li><a class="menu-item" href="decretos.html"><span class="content">Decretos Legislativos</span></a></li>							  
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Indicações</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Requerimentos</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Atas</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Projetos em Tramitação</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Pauta da Sessão</span></a></li>
-                        <li><a class="menu-item" href="resolucoes.html"><span class="content">Resoluções</span></a></li>
+                        <li><a class="menu-item" href="decretos.html"><span class="content">Decreto Legislativo</span></a></li>                        
+                        <!--<li>
+                          <li><a class="menu-item" href="javascript: void(0)"><span class="content">Projetos</span></a>
+                            <ul>
+                              <li><a class="menu-item" href="decretos.html"><span class="content">Projetos de Decretos Legislativos</span></a></li>
+                              <li><a class="menu-item" href="resolucoes.html"><span class="content">Projetos de Resoluções</span></a></li>
+                              <li><a class="menu-item" href="resolucoes.html"><span class="content">Projetos de Leis</span></a></li>
+                            </ul>
+                          </li>
+                        </li>-->
+                        <li><a class="menu-item" href="indicacoes.html"><span class="content">Indicações</span></a></li>
+                        <li><a class="menu-item" href="requerimentos.html"><span class="content">Requerimentos</span></a></li>
+                        <li><a class="menu-item" href="atas.html"><span class="content">Atas</span></a></li>
+                        <li><a class="menu-item" href="https://www.youtube.com/@camarataquari9681/streams"><span class="content">Sessôes</span></a></li>
+                        
                       </ul>
                     </div>
+                    <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Contato</span></a>
+                      <ul>
+                        <li><a class="menu-item" href="contato.html"><span class="content">Fale com a Câmara</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria"></span><span class="content">Ouvidoria</span></a></li>							
+                      </ul>
+                    </div>    
                   </nav>
                  
                 </div>
@@ -121,9 +145,9 @@
               </div>
             </div>
             <div class="col mb-5">              
-              <div class="main-content pl-sm-3 mb-5 mt-5" id="main-content">
+              <div class="main-content mr-md-10xh ml-md-10xh" id="main-content">
                 <div class="row carossel">
-                  <div class="col-sm-12 mb-5">
+                  <div class="col-sm-12 mb-5 pt-5">
                     <div class="br-carousel" data-stage="in" data-mobile-nav="">
                       <div class="carousel-button">
                         <button class="br-button carousel-btn-prev terciary circle" type="button" aria-label="Anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i>
@@ -131,27 +155,27 @@
                       </div>
                       <div class="carousel-stage">
                         <div class="carousel-page" active="active">
-                          <div class="carousel-content bg-blue-10">                            
-                            <img alt="foto 1" src="assets/teste4.jpg">
+                          <div class="carousel-content">                            
+                            <img alt="foto 1" src="assets/img/carrossel1.jpg">
                           </div>
                         </div>
                         <div class="carousel-page">
-                          <div class="carousel-content bg-violet-warm-10">                            
-                            <img alt="foto 2" src="assets/teste3.jpg">
+                          <div class="carousel-content">                            
+                            <img alt="foto 2" src="assets/img/carrossel2.jpg">
                           </div>
                         </div>
                         <div class="carousel-page">
-                          <div class="carousel-content bg-yellow-5">                            
-                            <img alt="foto 3" src="assets/teste2.jpg">
+                          <div class="carousel-content">                            
+                            <img alt="foto 3" src="assets/img/carrossel3.jpg">
                           </div>
                         </div>
                         <div class="carousel-page">
-                          <div class="carousel-content bg-green-cool-10">                            
+                          <div class="carousel-content">                            
                             <img alt="foto 4" src="assets/teste4.jpg">
                           </div>
                         </div>
                         <div class="carousel-page">
-                          <div class="carousel-content bg-orange-vivid-10">                            
+                          <div class="carousel-content">                            
                             <img alt="foto 5" src="assets/sessao-1.PNG">
                           </div>
                         </div>
@@ -174,44 +198,147 @@
                     </div>
                   </div>
                 </div>                              
-                <div class="row noticias mb-5 mt-5">
-                  <div class="col-sm-12">
-                    <h3>Notícias</h3>
-                  </div>
-                  <div class="col-md d-flex">
-                    <div class="br-card">
-                      <div class="card-content">
-                        <img alt="foto noticias 1" src="assets/sessao-1.PNG" class="img-fluid alt="Com R$ 18,8 bi para infraestrutura de transportes, Brasil recupera capacidade de investimentos"/>                          
-                        <div class="card-titulo">
-                          <span>Em encontro com superintendentes estaduais do DNIT, ministro Renan Filho</span>
-                        </div>  
-                      </div>
-                    </div>
-                  </div>
-                    <div class="col-md d-flex">
-                      <div class="br-card">
-                        <div class="card-content">
-                          <img src="assets/sessao-3.PNG" class="img-fluid" alt="Com R$ 18,8 bi para infraestrutura de transportes, Brasil recupera capacidade de investimentos"/>                          
-                          <div class="card-titulo">
-                            <span>Em encontro com superintendentes estaduais do DNIT, ministro Renan Filho</span>
-                          </div> 
+                
+                <!--Start code-->
+                <div class="row noticias">
+                  <div class="col-12 pb-5">
+                    <!--SECTION START-->
+                    <section class="row">                      
+                      <div class="col-12 col-md-6 pb-0 pb-md-3 pt-2 pr-md-1">
+                        <div class="card border-0 rounded-0 text-light overflow zoom">
+                          <div class="position-relative">
+                              <!--thumbnail img-->
+                            <div class="ratio_left-cover-1 image-wrapper">
+                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                  <img class="img-fluid w-100"
+                                      src="assets/img/noticias/noticia1.jpeg"
+                                      alt="Bootstrap portal template">
+                              </a>
+                            </div>
+                            <div div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                              <!--title-->
+                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                  <h2 class="h3 post-title text-white my-1">Câmara Elege novo Presidente para 2023</h2>
+                              </a>
+                              <!-- meta title -->
+                              <div class="news-meta">
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                      </div>                      
+              
+                      <!--Start box news-->
+                      <div class="col-12 col-md-6 pt-2 pl-md-1 mb-3 mb-lg-4">
+                          <div class="row">
+                              <!--news box-->
+                              <div class="col-6 pb-1 pt-0 pr-1">
+                                  <div class="card border-0 rounded-0 text-white overflow zoom">
+                                      <div class="position-relative">
+                                          <!--thumbnail img-->
+                                          <div class="ratio_right-cover-2 image-wrapper">
+                                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                                  <img class="img-fluid"
+                                                      src="assets/img/noticias/noticia2.jpg"
+                                                      alt="simple blog template bootstrap">
+                                              </a>
+                                          </div>
+                                          <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                              <!-- category -->
+                                              <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Notícia</a>
+
+                                              <!--title-->
+                                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                                  <h2 class="h5 text-white my-1">Sessão Solene em Homenagem ao senhor Paulo Porto Nunes</h2>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <!--news box-->
+                              <div class="col-6 pb-1 pl-1 pt-0">
+                                  <div class="card border-0 rounded-0 text-white overflow zoom">
+                                      <div class="position-relative">
+                                          <!--thumbnail img-->
+                                          <div class="ratio_right-cover-2 image-wrapper">
+                                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                                  <img class="img-fluid"
+                                                      src="assets/img/noticias/noticia3.jpg"
+                                                      alt="bootstrap templates for blog">
+                                              </a>
+                                          </div>
+                                          <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                              <!-- category -->
+                                              <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Notícia</a>
+                                              <!--title-->
+                                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                                  <h2 class="h5 text-white my-1">Sessão Solene em Homenagem aos 120 anos do IEE Pereira Coruja</h2>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <!--news box-->
+                              <div class="col-6 pb-1 pr-1 pt-1">
+                                  <div class="card border-0 rounded-0 text-white overflow zoom">
+                                      <div class="position-relative">
+                                          <!--thumbnail img-->
+                                          <div class="ratio_right-cover-2 image-wrapper">
+                                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                                  <img class="img-fluid"
+                                                      src="assets/img/noticias/noticia4.jpg"
+                                                      alt="bootstrap blog wordpress theme">
+                                              </a>
+                                          </div>
+                                          <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                              <!-- category -->
+                                              <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Notícia</a>
+                                              <!--title-->
+                                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                                  <h2 class="h5 text-white my-1">Composição da Mesa Diretora da Câmara Municipal de Vereadores de Taquari</h2>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              <!--news box-->
+                              <div class="col-6 pb-1 pl-1 pt-1">
+                                  <div class="card border-0 rounded-0 text-white overflow zoom">
+                                      <div class="position-relative">
+                                          <!--thumbnail img-->
+                                          <div class="ratio_right-cover-2 image-wrapper">
+                                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                                  <img class="img-fluid"
+                                                      src="assets/img/noticias/noticia5.jpg"
+                                                      alt="blog website templates bootstrap">
+                                              </a>
+                                          </div>
+                                          <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                              <!-- category -->
+                                              <a class="p-1 badge badge-primary rounded-0" href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">Notícia</a>
+                                              <!--title-->
+                                              <a href="https://bootstrap.news/bootstrap-4-template-news-portal-magazine/">
+                                                  <h2 class="h5 text-white my-1">Sessão Ordinária 14/12/2021</h2>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--end news box-->
+                          </div>
                       </div>
+                      <!--End box news-->
+                    </section>
+                    <!--END SECTION-->
                   </div>
-                  <div class="col-md d-flex">
-                    <div class="br-card">
-                      <div class="card-content">
-                        <img src="assets/sessao-4.PNG" class="img-fluid" alt="Com R$ 18,8 bi para infraestrutura de transportes, Brasil recupera capacidade de investimentos"/>                          
-                        <div class="card-titulo">
-                          <span>Em encontro com superintendentes estaduais do DNIT, ministro Renan Filho</span>
-                        </div> 
-                      </div>
-                      </div>
-                    </div>
                 </div>
+                <!--end code-->                 
                 <div class="row banner mb-5 mt-5">
                   <div class="banner-img col-xs-12 col-sm-6 col-md-8 col-lg-4">
-                    <img alt="foto banner" src="assets/10492.jpg">
+                    <img alt="foto banner" src="assets/img/img-banner.jpg">
                   </div>
                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="banner-titulo">
@@ -226,212 +353,303 @@
                     </span>
                   </div>
                 </div>
-                <div class="row transmissoes mb-5 mt-5">
-                  <div class="col-sm-12">
-                    <h3>Sessões ao Vivo</h3>
-                  </div>
-
-                  <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <img alt="foto sessao 1"  src="assets/sessao-1.PNG">
-                        <i class="far fa-play-circle icone-play"></i>
-                      </div>
+                <div class="row transmissoes mb-10x mt-5x">
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h3>Transmissões ao Vivo</h3>
+                    </div>
+                    <div class="col-sm-2 link-mais-transmissoes">
+                      <a href="https://www.youtube.com/@camarataquari9681/streams" class="text-weight-semi-bold">Ver mais transmissões</a>
                     </div>
                   </div>
                   <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <img alt="foto sessao 2" src="assets/sessao-2.PNG">
-                        <i class="far fa-play-circle icone-play"></i>
+                    <a href="https://www.youtube.com/watch?v=UaSQbCOUUSA">
+                      <div class="br-card hover">
+                        <div class="card-content">
+                          <img alt="Sessão" src="assets/img/capa-video.webp">
+                          <i class="far fa-play-circle icone-play"></i>
+                          <div class="card-footer position-absolute">
+                            <p>Sessão Solene - 10/02/2023</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <img alt="foto sessao 3" src="assets/sessao-3.PNG">
-                        <i class="far fa-play-circle icone-play"></i>
+                    <a href="https://www.youtube.com/watch?v=yALwnLFdX9g">
+                      <div class="br-card hover">
+                        <div class="card-content">
+                          <img alt="Sessão"  src="assets/img/capa-video.webp">
+                          <i class="far fa-play-circle icone-play"></i>
+                          <div class="card-footer position-absolute">
+                            <p>Audiência Pública - 01/02/2023</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <img alt="foto sessao 4" src="assets/sessao-4.PNG">
-                        <i class="far fa-play-circle icone-play"></i>
+                    <a href="https://www.youtube.com/watch?v=5CY6A3bdp_s">
+                      <div class="br-card hover">
+                        <div class="card-content">
+                          <img alt="Sessão"  src="assets/img/capa-video.webp">
+                          <i class="far fa-play-circle icone-play"></i>
+                          <div class="card-footer position-absolute">
+                            <p>Sessão Ordinária - 31/01/2023</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                    <div class="col-xs-12">
-                      <a href="/transmissoes" class="link-com-linha">Ver mais transmissões</a>
-                    </div>    
-                </div>
-                <div class="row links-acesso-rapido mb-5 mt-5">
-                  <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <i class="icon far fa-envelope fa-lg"></i>
-                        <p>Fale com a Câmara</p>                        
-                      </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <i class="icon fab fa-sistrix fa-lg"></i>
-                        <p>Portal da Transparência</p>                         
+                    <a href="https://www.youtube.com/watch?v=tGoAfJs7vb8">
+                        <div class="br-card hover">
+                        <div class="card-content">
+                          <img alt="Sessão"  src="assets/img/capa-video.webp">
+                          <i class="far fa-play-circle icone-play"></i>
+                          <div class="card-footer position-absolute">
+                            <p>Sessão Ordinária - 17/01/2023</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <i class="icon fas fa-info-circle fa-lg"></i>
-                        <p>Acesso a Informação</p>                         
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <i class="icon far fa-comments fa-lg"></i>
-                        <p>Ouvidoria</p>                         
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <i class="icon fas fa-balance-scale fa-lg"></i>
-                        <p>Leis</p>                         
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md d-flex">
-                    <div class="br-card hover">
-                      <div class="card-content">
-                        <i class="icon far fa-file-alt fa-lg"></i>
-                        <p>Ordem do Dia</p>                         
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
+                <div class="row links-acesso-rapido mb-5x mt-10x">
+                  <div class="col-md d-flex">
+                    <a href="contato.html">
+                      <div class="br-card hover">
+                        <div class="card-content">
+                          <i class="icon far fa-envelope fa-lg"></i>
+                          <p>Fale com a Câmara</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md d-flex">
+                    <a href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia">
+                      <div class="br-card hover">
+                          <div class="card-content">
+                            <i class="icon fab fa-sistrix fa-lg"></i>
+                            <p>Portal da Transparência</p>
+                          </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md d-flex">
+                    <a href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formulario">
+                      <div class="br-card hover">
+                        <div class="card-content">
+                          <i class="icon fas fa-info-circle fa-lg"></i>
+                          <p>Acesso a Informação</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md d-flex">
+                    <a href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria">
+                      <div class="br-card hover">
+                        <div class="card-content">
+                          <i class="icon far fa-comments fa-lg"></i>
+                          <p>Ouvidoria</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md d-flex">
+                    <a href="https://camarataquari.cespro.com.br/">
+                      <div class="br-card hover">
+                        <div class="card-content">
+                          <i class="icon fas fa-balance-scale fa-lg"></i>
+                          <p>Leis</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md d-flex">
+                    <a href="https://portal.tce.rs.gov.br/aplicprod/f?p=50500:4:::NO::F50500_CD_ORGAO:61301&cs=17mAjOzYwNhwnVVoSkXvi9Cgkg_M">
+                      <div class="br-card hover">
+                        <div class="card-content">
+                          <i class="icon fas fa-gavel fa-lg"></i>
+                          <p>Licitações</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div> 
+              </div>                
             </div>
           </div>
         </div>
       </main>
       <footer class="br-footer">
         <div class="container-lg">
-          <div class="logo"><img src="assets/logo.png" alt="Imagem"/></div>
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/img/logo-rodape.png" alt="Logo"/>
+            </a>
+          </div>
           <div class="br-list horizontal" data-toggle="data-toggle" data-sub="data-sub">
             <div class="col-2">
               <a class="br-item header" href="javascript:void(0)">
-                <div class="content text-down-01 text-bold text-uppercase">Institucional</div>
+                <div class="content text-down-05 text-bold text-uppercase">Institucional</div>
                 <div class="support">
                   <i class="fas fa-angle-down" aria-hidden="true"></i>
                 </div>
               </a>
               <div class="br-list">
-                  <span class="br-divider d-md-none"></span>                
-                  <a class="br-item" href="javascript:void(0)">
+                  <span class="br-divider d-md-none"></span>
+                  <a class="br-item" href="camara.html">
                     <div class="content">A Câmara</div>
                   </a>
-                  <a class="br-item" href="javascript:void(0)">
-                    <div class="content">Fale com a Câmara</div>
+                  <a class="br-item" href="historicovereadores.html">
+                    <div class="content">Histórico de Vereadores</div>
                   </a>
-                  <a class="br-item" href="javascript:void(0)">
-                    <div class="content">Ouvidoria</div>
-                  </a>                  
+                  <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/servidoresLotacao/servidores">
+                    <div class="content">Quadro de Servidores</div>
+                  </a>
                   <span class="br-divider d-md-none"></span>
               </div>
             </div>
             <div class="col-2">
               <a class="br-item header" href="javascript:void(0)">
-                <div class="content text-down-01 text-bold text-uppercase">Transparência</div>
+                <div class="content text-down-05 text-bold text-uppercase">Transparência</div>
                 <div class="support">
                   <i class="fas fa-angle-down" aria-hidden="true"></i>
                 </div>
               </a>
               <div class="br-list">
                 <span class="br-divider d-md-none"></span>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia">
                   <div class="content">Portal da Transparência</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formulario">
                   <div class="content">Acesso a Informação</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
-                  <div class="content">Receitas e Despesas</div>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/despesas">
+                  <div class="content">Despesas</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/receitas">
+                  <div class="content">Receitass</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/diarias">
+                  <div class="content">Diárias</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/patrimonio">
+                  <div class="content">Patrimônio</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/folhaLotacao/servidores">
+                  <div class="content">Folha de Pagamento</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/fiscal">
+                  <div class="content">Publicações Legais</div>
+                </a>
+                <a class="br-item" href="https://portal.tce.rs.gov.br/aplicprod/f?p=50500:4:::NO::F50500_CD_ORGAO:61301&cs=17mAjOzYwNhwnVVoSkXvi9Cgkg_M">
+                  <div class="content">Licitações</div>
                 </a>
                 <span class="br-divider d-md-none"></span>
               </div>
             </div>
             <div class="col-2">
               <a class="br-item header" href="javascript:void(0)">
-                <div class="content text-down-01 text-bold text-uppercase">Vereadores</div>
+                <div class="content text-down-05 text-bold text-uppercase">Vereadores</div>
                 <div class="support">
                   <i class="fas fa-angle-down" aria-hidden="true"></i>
                 </div>
               </a>
               <div class="br-list">
                 <span class="br-divider d-md-none"></span>
-                <a class="br-item" href="javascript:void(0)">
-                  <div class="content">Quem são</div>
+                <a class="br-item" href="vereadores.html">
+                  <div class="content">Vereadores(as) em Exercício</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="mesa-diretora.html">
                   <div class="content">Mesa Diretora</div>
-                </a>                
+                </a>
+                <a class="br-item" href="comissoes.html">
+                  <div class="content">Comissôes</div>
+                </a>
                 <span class="br-divider d-md-none"></span>
               </div>
             </div>
-            <div class="col-2"><a class="br-item header" href="javascript:void(0)">
-                <div class="content text-down-01 text-bold text-uppercase">Atividade Parlamentar</div>
-                <div class="support"><i class="fas fa-angle-down" aria-hidden="true"></i>
-                </div></a>
+            <div class="col-2">
+              <a class="br-item header" href="javascript:void(0)">
+                <div class="content text-down-05 text-bold text-uppercase">Atividade Parlamentar</div>
+                <div class="support">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </div>
+              </a>
               <div class="br-list">
                 <span class="br-divider d-md-none"></span>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="https://camarataquari.cespro.com.br/">
                   <div class="content">Leis</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
-                  <div class="content">Decretos</div>
+                <a class="br-item" href="decretos.html">
+                  <div class="content">Decreto Legislativo</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="indicacoes.html">
                   <div class="content">Indicações</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="requerimentos.html">
                   <div class="content">Requerimentos</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="atas.html">
                   <div class="content">Atas</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="https://www.youtube.com/@camarataquari9681/streams">
+                  <div class="content">Sessões</div>
+                </a>
+
+                <!--<a class="br-item" href="javascript:void(0)">
                   <div class="content">Projetos em Tramitação</div>
                 </a>
                 <a class="br-item" href="javascript:void(0)">
                   <div class="content">Pauta da Sessão</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="resolucoes.html">
                   <div class="content">Resoluções</div>
+                </a>-->
+                <span class="br-divider d-md-none"></span>
+              </div>
+            </div>
+            <div class="col-2">
+              <a class="br-item header" href="javascript:void(0)">
+                <div class="content text-down-05 text-bold text-uppercase">Contato</div>
+                <div class="support">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </div>
+              </a>
+              <div class="br-list">
+                <span class="br-divider d-md-none"></span>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioFaleConosco">
+                  <div class="content">Fale com a Câmara</div>
+                </a>
+                <a class="br-item" href="contato.html">
+                  <div class="content">Contato</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria">
+                  <div class="content">Ouvidoria</div>
                 </a>
                 <span class="br-divider d-md-none"></span>
               </div>
-            </div>                        
+            </div>
           </div>
           <div class="d-none d-sm-block">
             <div class="row align-items-end justify-content-between py-5">
-              <div class="col">                
-              </div>
-              <div class="col assigns text-right">
+              <div class="col">
                 <div class="social-network">
                   <div class="social-network-title">Redes Sociais</div>
-                  
-                    <a class="br-button circle" target="_blank" href="https://www.facebook.com/camaravereadorestaquari" aria-label="Compartilhar por Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a class="br-button circle" target="_blank" href="https://www.instagram.com/camarataquari/?hl=pt" aria-label="Compartilhar por Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                 
+                  <a class="br-button circle" target="_blank" href="https://www.facebook.com/camaravereadorestaquari" aria-label="Compartilhar por Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                  <a class="br-button circle" target="_blank" href="https://www.instagram.com/camarataquari/?hl=pt" aria-label="Compartilhar por Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                  <a class="br-button circle" target="_blank" href="https://www.youtube.com/@camarataquari9681/streams" aria-label="Compartilhar por Youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                  <a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
+              </div>
+              <div class="col assigns text-right">
+
+                  <img class="ml-4" src="assets/img/creative-commons-license.svg" alt="Imagem"/>
+                  <div class="text-down-05 text-medium pb-3">Os conteúdos e dados deste site estão publicados sob a licença <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons 4.0 — Atribuir Fonte - Compartilhar Igual.</a>
+                </div>
+
               </div>
             </div>
           </div>
@@ -439,11 +657,10 @@
         <span class="br-divider my-3"></span>
         <div class="container-lg">
           <div class="info">
-            <div class="text-down-01 text-medium pb-3">© 2023. Todos os direitos reservados à&nbsp;<strong>Francis Dorneles (51)99544-9250</strong></div>
+            <div class="text-down-05 text-medium pb-3">© 2023. Todos os direitos reservados à&nbsp;<strong>Francis Dorneles (51)99544-9250</strong></div>
           </div>
         </div>
       </footer>
-     
     </div>
     <script src="https://www.gov.br/ds/assets/govbr-ds-dev-core/dist/core-init.js"></script>
 	  <script src="js/bootstrap.bundle.min.js"></script>

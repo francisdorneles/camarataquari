@@ -4,7 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Template básico</title>
+    <title>Câmara Municipal de Taquari</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
     <!-- Fonte Rawline-->
     <link rel="stylesheet" href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
     <!-- Fonte Raleway-->
@@ -17,34 +20,36 @@
   <body>
     <div class="template-base">
       <nav class="br-skiplink">
-        <a class="br-item" href="#main-content" accesskey="1">Ir para o conteúdo (1/4)
+        <a class="br-item" href="#main-content" accesskey="1">Ir para o conteúdo (1/3)
             <span class="br-tag text ml-1">1</span>
         </a>
-        <a class="br-item" href="#header-navigation" accesskey="2">Ir para o menu (2/4) 
+        <a class="br-item" href="#header-navigation" accesskey="2">Ir para o menu (2/3)
           <span class="br-tag text ml-1">2</span>
-        </a>          
-        <a class="br-item" href="#footer" accesskey="4">Ir para o rodapé (3/4) 
-          <span class="br-tag text ml-1">4</span>
+        </a>
+        <a class="br-item" href="#footer" accesskey="4">Ir para o rodapé (3/3)
+          <span class="br-tag text ml-1">3</span>
         </a>
       </nav>
-      <header class="br-header mb-4" id="header" data-sticky="data-sticky">
+      <header class="br-header" id="header" data-sticky="data-sticky">
         <div class="container-lg">
-          <div class="header-top">
+          <div class="header-top mr-md-10xh ml-md-10xh">
             <div class="header-logo">
-              <img src="assets/logo.png" alt="logo"/>              
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="Logo"/>
+              </a>
             </div>
-            <div class="header-actions">
+            <div class="header-actions ">
               <div class="header-links dropdown">
                 <button class="br-button circle small" type="button" data-toggle="dropdown" aria-label="Abrir Acesso Rápido"><i class="fas fa-ellipsis-v" aria-hidden="true"></i></button>
                 <div class="br-list">
                   <div class="header">
                     <div class="title">Acesso Rápido</div>
-                  </div><a class="br-item" href="javascript:void(0)">Sessões ao Vivo</a><a class="br-item" href="javascript:void(0)">Webmail</a><a class="br-item" href="javascript:void(0)">Contato</a>
+                  </div><a class="br-item" href="javascript:void(0)">Sessões ao Vivo</a><a class="br-item" href="https://www.youtube.com/@camarataquari9681/streams">Webmail</a><a class="br-item" href="contato.html">Contato</a>
                 </div>
-              </div>                                          
+              </div>
             </div>
           </div>
-          <div class="header-bottom">
+          <div class="header-bottom mr-md-10xh ml-md-10xh">
             <div class="header-menu">
               <div class="header-menu-trigger" id="header-navigation">
                 <button class="br-button small circle" type="button" aria-label="Menu" data-toggle="menu" data-target="#main-navigation" id="navigation"><i class="fas fa-bars" aria-hidden="true"></i>
@@ -52,20 +57,27 @@
               </div>
               <div class="header-info">
                 <div class="header-title">Câmara Municipal de Taquari</div>
-                <div class="header-subtitle">Poder Legislativo do município de Taquari</div>
+                <div class="header-subtitle">Poder Legislativo do Município de Taquari</div>
               </div>
-            </div>                 
+            </div>
+            <div class="header-social-network">
+              <a class="br-button circle" target="_blank" href="https://www.facebook.com/camaravereadorestaquari" aria-label="Compartilhar por Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              <a class="br-button circle" target="_blank" href="https://www.instagram.com/camarataquari/?hl=pt" aria-label="Compartilhar por Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              <a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            </div>
           </div>
         </div>
       </header>
-      <main class="d-flex flex-fill mb-5" id="main">
-        <div class="container-lg">
+      <main class="d-flex flex-fill mr-md-10xh ml-md-10xh" id="main">
+        <div class="container-lg d-flex">
           <div class="row">
             <div class="br-menu" id="main-navigation">
               <div class="menu-container">
                 <div class="menu-panel">
                   <div class="menu-header">
-                    <div class="menu-title"><img src="assets/logo.png" alt="Imagem ilustrativa"/><span>Câmara Municipal de Taquari</span></div>
+                    <a href="index.html">
+                      <div class="menu-title"><img src="assets/img/logo.png" alt="Logo"/><span>Câmara Municipal de Taquari</span></div>
+                    </a>
                     <div class="menu-close">
                       <button class="br-button circle" type="button" aria-label="Fechar o menu" data-dismiss="menu"><i class="fas fa-times" aria-hidden="true"></i></button>
                     </div>
@@ -74,67 +86,128 @@
                     <div class="menu-folder">
                       <a class="menu-item" href="javascript: void(0)"><span class="content">Institucional</span></a>
                       <ul>
-                        <li><a href="contato.html" class="menu-item" href="javascript: void(0)"><span class="content">Fale com a Câmara</span></a></li>
-                        <li><a href="mesa-diretora.html" class="menu-item"><span class="content">Mesa Diretora</span></a></li>
-                        <li><a href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria" class="menu-item"></span><span class="content">Ouvidoria</span></a></li>							
+                        <li><a href="camara.html" class="menu-item" href="javascript: void(0)"><span class="content">A Câmara</span></a></li>
+                        <li><a href="historicovereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Histórico de Vereadores</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/servidoresLotacao/servidores"></span><span class="content">Quadro de Servidores</span></a></li>
                       </ul>
                     </div>
                     <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Transparência</span></a>
                       <ul>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Portal da Transparência</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Acesso à Informação</span></a></li>							  
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Receitas e Despesas</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia"><span class="content">Portal da Transparência</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formulario"><span class="content">Acesso à Informação</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/despesas"><span class="content">Despesas</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/receitas"><span class="content">Receitas</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/diarias"><span class="content">Diárias</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/patrimonio"><span class="content">Patrimônio</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/folhaLotacao/servidores"><span class="content">Folha de Pagamento</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/fiscal"><span class="content">Publicações Legais</span></a></li>
+                        <li><a class="menu-item" href="https://portal.tce.rs.gov.br/aplicprod/f?p=50500:4:::NO::F50500_CD_ORGAO:61301&cs=17mAjOzYwNhwnVVoSkXvi9Cgkg_M"><span class="content">Licitações</span></a></li>
+
                       </ul>
                     </div>
                     <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Vereadores</span></a>
                       <ul>
-                        <li><a href="vereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Quem são</span></a></li>							  							  
+                        <li><a href="vereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Vereadores(as) em Exercício</span></a></li>
+                        <li><a class="menu-item" href="mesa-diretora.html"><span class="content">Mesa Diretora</span></a></li>
+                        <li><a class="menu-item" href="comissoes.html"><span class="content">Comissôes</span></a></li>
                       </ul>
                     </div>
                     <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Atividade Parlamentar</span></a>
                       <ul>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Leis</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Decretos</span></a></li>							  
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Indicações</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Requerimentos</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Atas</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Projetos em Tramitação</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Pauta da Sessão</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Resoluções</span></a></li>
+                        <li><a class="menu-item" href="https://camarataquari.cespro.com.br/"><span class="content">Leis</span></a></li>
+                        <li><a class="menu-item" href="decretos.html"><span class="content">Decreto Legislativo</span></a></li>
+                        <li>
+                          <li><a class="menu-item" href="javascript: void(0)"><span class="content">Projetos</span></a>
+                            <ul>
+                              <li><a class="menu-item" href="decretos.html"><span class="content">Projetos de Decretos Legislativos</span></a></li>
+                              <li><a class="menu-item" href="resolucoes.html"><span class="content">Projetos de Resoluções</span></a></li>
+                              <li><a class="menu-item" href="resolucoes.html"><span class="content">Projetos de Leis</span></a></li>
+                            </ul>
+                          </li>
+                        </li>
+                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Sessôes</span></a></li>
+
                       </ul>
                     </div>
-                  </nav>      
-                                                   
+                    <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Contato</span></a>
+                      <ul>
+                        <li><a class="menu-item" href="contato.html"><span class="content">Fale com a Câmara</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria"></span><span class="content">Ouvidoria</span></a></li>
+                      </ul>
+                    </div>
+                  </nav>
+
                 </div>
                 <div class="menu-scrim" data-dismiss="menu" tabindex="0"></div>
               </div>
             </div>
-           <div class="col mb-5">
-            <div class="main-content pl-sm-3 mb-5 mt-5" id="main-content">
+            <div class="col mb-5">
+              <div class="main-content mr-md-10xh ml-md-10xh" id="main-content">
               <div class="row contato">
               <div class="contato-informacoes col-md-6">
-                <h2>Fale com a Câmara</h2>
+                <p class="text-left text-up-05 text-weight-bold mt-6xh">Fale com a Câmara</p>
                 <p class="contato-subtitulo-1">Precisa de alguma informação e não encontrou no nosso site?</p>
-                <p class="contato-subtitulo-2">Procure no menu abaixo os serviços disponíveis para tirar suas dúvidas.</p>
+                <p class="contato-subtitulo-2">Procure na lista abaixo os serviços disponíveis para tirar suas dúvidas.</p>
                 <ul class="contato-ul ps-0">
                   <li class="d-flex align-items-start mb-1">Contatos</li>
-                  <li class="d-flex align-items-start mb-1">Telefone: (51) 3653-1420</li>
-                  <li class="d-flex align-items-start mb-1">E-mail: contato@camarataquari.com.br</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Diretor Geral</strong></li>
+                  <li class="d-flex align-items-start mb-1">Jadir Rodrigues</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 1005</li>
+                  <li class="d-flex align-items-start mb-1">E-mail: jadir.rodrigues@camarataquari.com.br</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Chefe de Gabinete da Presidência</strong></li>
+                  <li class="d-flex align-items-start mb-1">Eduardo Adam Nunes</li>
+                  <li class="d-flex align-items-start mb-1">E-mail: eduardo@camarataquari.com.br</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 1003</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Assessor de Bancadas</strong></li>
+                  <li class="d-flex align-items-start mb-1">Marcio Schwingel</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 1004</li>
+                  <li class="d-flex align-items-start mb-1">E-mail: marcio@camarataquari.com.br</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Assessor de Gabinete do Diretor Geral</strong></li>
+                  <li class="d-flex align-items-start mb-1">Roger Peterson dos Santos Pereira</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 1005</li>
+                  <li class="d-flex align-items-start mb-1">E-mail: roger@camarataquari.com.br</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Assessor de Bancadas</strong></li>
+                  <li class="d-flex align-items-start mb-1">Marcos de Jesus Pereira Junior</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 1004</li>
+                  <li class="d-flex align-items-start mb-1">E-mail: marcos@camarataquari.com.br</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Assessor de Bancadas</strong></li>
+                  <li class="d-flex align-items-start mb-1">Gustavo Costa Ramos</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 1004</li>
+                  <li class="d-flex align-items-start mb-1">E-mail: gustavo@camarataquari.com.br</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Assessor de Imprensa</strong></li>
+                  <li class="d-flex align-items-start mb-1">Sandro Jocelito Forgiarini</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 30</li>
+                  <li class="d-flex align-items-start mb-1">E-mail: sandro@camarataquari.com.br</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Assessoria Jurídica</strong></li>
+                  <li class="d-flex align-items-start mb-1">Apóstolo Maximino Prisco</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 1006</li>
+                  <li class="d-flex align-items-start mb-1">E-mail: juridico@camarataquari.com.br</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Assessor Administrativo</strong></li>
+                  <li class="d-flex align-items-start mb-1">Osvaldo Capelão de Moraes Junior</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 1008</li>
+                  <li class="d-flex align-items-start mb-1">E-mail: contabil@camarataquari.com.br</li>
+                  <li class="mt-4x d-flex align-items-start mb-1"><strong class="pr-2">Assessor Geral</strong></li>
+                  <li class="d-flex align-items-start mb-1">Rosália Souza da Costa Kussler</li>
+                  <li class="d-flex align-items-start mb-1">Fone: 3653-1420 - Ramal: 1008</li>
+                </ul>
+                <ul class="mt-4x contato-ul ps-0">
+                  <li class="d-flex align-items-start mb-1">Contato Geral</li>
+                  <li class="d-flex align-items-start mb-1"><strong class="pr-2">E-mail</strong>:contato@camarataquari.com.br</li>
                   <li class="contato-link d-flex align-items-start mb-1"><a target="blank" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioFaleConosco">»  Acesse a página do Fale Conosco.</a></li>
                 </ul>
-                <ul class="contato-ul ps-0">
+                <ul class="mt-4x contato-ul ps-0">
                   <li class="d-flex align-items-start mb-1">Serviço de Acesso à Informação (SIC)</li>
                   <li class="d-flex align-items-start mb-1">Tem a função de prestar informações com base na Lei de Acesso à Informação (LAI) regulamentada pela lei federal 12.527/2011.</li>
                   <li class="contato-link d-flex align-items-start mb-1"><a target="blank" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formulario">» Acesse a página do SIC.</a></li>
                 </ul>
-                <ul class="contato-ul ps-0">
+                <ul class="mt-4x contato-ul ps-0">
                   <li class="d-flex align-items-start mb-1">Ouvidoria</li>
                   <li class="d-flex align-items-start mb-1">É responsável pela mediação entre os curitibanos e a Câmara Municipal. Recebe elogios, reclamações, sugestões e solicitações.</li>
                   <li class="contato-link d-flex align-items-start mb-1"><a target="blank" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria">»  Acesse a página da Ouvidoria.</a></li>
                 </ul>
               </div>
               <div class="contato-informacoes col-md-6">
-                <h2>Localização</h2> 
+                <p class="text-left text-up-05 text-weight-bold mt-6xh">Localização</p>
                   
                   <iframe height="70%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.159819926524!2d-51.86859938520876!3d-29.801926826998585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951b856f1e8f0d65%3A0x68bb4d68ae1e3b56!2sC%C3%A2mara%20Municipal%20de%20Vereadores!5e0!3m2!1spt-BR!2sbr!4v1676048697151!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;"   referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
@@ -149,79 +222,107 @@
       </main>
       <footer class="br-footer">
         <div class="container-lg">
-          <div class="logo"><img src="assets/logo.png" alt="Imagem"/></div>
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/img/logo-rodape.png" alt="Logo"/>
+            </a>
+          </div>
           <div class="br-list horizontal" data-toggle="data-toggle" data-sub="data-sub">
             <div class="col-2">
               <a class="br-item header" href="javascript:void(0)">
-                <div class="content text-down-01 text-bold text-uppercase">Institucional</div>
+                <div class="content text-down-05 text-bold text-uppercase">Institucional</div>
                 <div class="support">
                   <i class="fas fa-angle-down" aria-hidden="true"></i>
                 </div>
               </a>
               <div class="br-list">
-                  <span class="br-divider d-md-none"></span>                
-                  <a class="br-item" href="javascript:void(0)">
+                  <span class="br-divider d-md-none"></span>
+                  <a class="br-item" href="camara.html">
                     <div class="content">A Câmara</div>
                   </a>
-                  <a class="br-item" href="javascript:void(0)">
-                    <div class="content">Fale com a Câmara</div>
+                  <a class="br-item" href="historicovereadores.html">
+                    <div class="content">Histórico de Vereadores</div>
                   </a>
-                  <a class="br-item" href="javascript:void(0)">
-                    <div class="content">Ouvidoria</div>
-                  </a>                  
+                  <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/servidoresLotacao/servidores">
+                    <div class="content">Quadro de Servidores</div>
+                  </a>
                   <span class="br-divider d-md-none"></span>
               </div>
             </div>
             <div class="col-2">
               <a class="br-item header" href="javascript:void(0)">
-                <div class="content text-down-01 text-bold text-uppercase">Transparência</div>
+                <div class="content text-down-05 text-bold text-uppercase">Transparência</div>
                 <div class="support">
                   <i class="fas fa-angle-down" aria-hidden="true"></i>
                 </div>
               </a>
               <div class="br-list">
                 <span class="br-divider d-md-none"></span>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia">
                   <div class="content">Portal da Transparência</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formulario">
                   <div class="content">Acesso a Informação</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
-                  <div class="content">Receitas e Despesas</div>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/despesas">
+                  <div class="content">Despesas</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/receitas">
+                  <div class="content">Receitass</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/diarias">
+                  <div class="content">Diárias</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/patrimonio">
+                  <div class="content">Patrimônio</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/folhaLotacao/servidores">
+                  <div class="content">Folha de Pagamento</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/fiscal">
+                  <div class="content">Publicações Legais</div>
+                </a>
+                <a class="br-item" href="https://portal.tce.rs.gov.br/aplicprod/f?p=50500:4:::NO::F50500_CD_ORGAO:61301&cs=17mAjOzYwNhwnVVoSkXvi9Cgkg_M">
+                  <div class="content">Licitações</div>
                 </a>
                 <span class="br-divider d-md-none"></span>
               </div>
             </div>
             <div class="col-2">
               <a class="br-item header" href="javascript:void(0)">
-                <div class="content text-down-01 text-bold text-uppercase">Vereadores</div>
+                <div class="content text-down-05 text-bold text-uppercase">Vereadores</div>
                 <div class="support">
                   <i class="fas fa-angle-down" aria-hidden="true"></i>
                 </div>
               </a>
               <div class="br-list">
                 <span class="br-divider d-md-none"></span>
-                <a class="br-item" href="javascript:void(0)">
-                  <div class="content">Quem são</div>
+                <a class="br-item" href="vereadores.html">
+                  <div class="content">Vereadores(as) em Exercício</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="mesa-diretora.html">
                   <div class="content">Mesa Diretora</div>
-                </a>                
+                </a>
+                <a class="br-item" href="comissoes.html">
+                  <div class="content">Comissôes</div>
+                </a>
                 <span class="br-divider d-md-none"></span>
               </div>
             </div>
-            <div class="col-2"><a class="br-item header" href="javascript:void(0)">
-                <div class="content text-down-01 text-bold text-uppercase">Atividade Parlamentar</div>
-                <div class="support"><i class="fas fa-angle-down" aria-hidden="true"></i>
-                </div></a>
+            <div class="col-2">
+              <a class="br-item header" href="javascript:void(0)">
+                <div class="content text-down-05 text-bold text-uppercase">Atividade Parlamentar</div>
+                <div class="support">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </div>
+              </a>
               <div class="br-list">
                 <span class="br-divider d-md-none"></span>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="https://camarataquari.cespro.com.br/">
                   <div class="content">Leis</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
-                  <div class="content">Decretos</div>
+                <a class="br-item" href="">
+                  <div class="content">Decreto Legislativo</div>
                 </a>
                 <a class="br-item" href="javascript:void(0)">
                   <div class="content">Indicações</div>
@@ -238,25 +339,44 @@
                 <a class="br-item" href="javascript:void(0)">
                   <div class="content">Pauta da Sessão</div>
                 </a>
-                <a class="br-item" href="javascript:void(0)">
+                <a class="br-item" href="resolucoes.html">
                   <div class="content">Resoluções</div>
                 </a>
                 <span class="br-divider d-md-none"></span>
               </div>
-            </div>                        
+            </div>
+            <div class="col-2">
+              <a class="br-item header" href="javascript:void(0)">
+                <div class="content text-down-05 text-bold text-uppercase">Contato</div>
+                <div class="support">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </div>
+              </a>
+              <div class="br-list">
+                <span class="br-divider d-md-none"></span>
+                <a class="br-item" href="javascript:void(0)">
+                  <div class="content">Fale com a Câmara</div>
+                </a>
+                <a class="br-item" href="contato.html">
+                  <div class="content">Contato</div>
+                </a>
+                <a class="br-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria">
+                  <div class="content">Ouvidoria</div>
+                </a>
+                <span class="br-divider d-md-none"></span>
+              </div>
+            </div>
           </div>
           <div class="d-none d-sm-block">
             <div class="row align-items-end justify-content-between py-5">
-              <div class="col">                
+              <div class="col">
               </div>
               <div class="col assigns text-right">
                 <div class="social-network">
                   <div class="social-network-title">Redes Sociais</div>
-                  
-                    <a class="br-button circle" target="_blank" href="https://www.facebook.com/camaravereadorestaquari" aria-label="Compartilhar por Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a class="br-button circle" target="_blank" href="https://www.instagram.com/camarataquari/?hl=pt" aria-label="Compartilhar por Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                 
+                  <a class="br-button circle" target="_blank" href="https://www.facebook.com/camaravereadorestaquari" aria-label="Compartilhar por Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                  <a class="br-button circle" target="_blank" href="https://www.instagram.com/camarataquari/?hl=pt" aria-label="Compartilhar por Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                  <a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -265,11 +385,10 @@
         <span class="br-divider my-3"></span>
         <div class="container-lg">
           <div class="info">
-            <div class="text-down-01 text-medium pb-3">© 2023. Todos os direitos reservados à&nbsp;<strong>Francis Dorneles (51)99544-9250</strong></div>
+            <div class="text-down-05 text-medium pb-3">© 2023. Todos os direitos reservados à&nbsp;<strong>Francis Dorneles (51)99544-9250</strong></div>
           </div>
         </div>
       </footer>
-     
     </div>
     <script src="https://www.gov.br/ds/assets/govbr-ds-dev-core/dist/core-init.js"></script>
 	  <script src="js/bootstrap.bundle.min.js"></script>
