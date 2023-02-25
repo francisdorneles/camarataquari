@@ -81,21 +81,8 @@ background-image: linear-gradient(rgba(var(--color-rgb), var(--hover)), rgba(var
 }
 
 .links-acesso-rapido .br-card{
-  /*background-color: #fff;
-  display: flex;
-  box-shadow: 1px 0px 15px -4px #bdbdbd;
-  height: 164px;
-  align-content: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  width: calc(20vw - 100%);*/
   background-color: #fff;
     display: flex;
-    /*max-width: 164px;*/
     box-shadow: 1px 0px 15px -4px #bdbdbd;
     height: 164px;
     align-content: center;
@@ -155,6 +142,11 @@ background-image: linear-gradient(rgba(var(--color-rgb), var(--hover)), rgba(var
     border-radius: 0.25rem;
     width: 158px;
     height: 125px;
+
+}
+
+.links-acesso-rapido .card:hover{
+      background-color: #eaeaea;
 }
 
 .links-acesso-rapido .card-body {
@@ -198,6 +190,11 @@ position: relative;
 /* Fim Carrosel */
 
 /* transmissoes */
+
+.transmissoes .br-card{
+    margin-bottom: 0 !important;
+}
+
 .transmissoes .card-content{
   position:relative;
   text-align:center;
@@ -234,7 +231,7 @@ position: relative;
 .transmissoes .link-mais-transmissoes a{
   position: absolute;
   top: 50%;
-  left: 56%;
+  left: 43%;
 }
 
 .transmissoes .card-footer p{
@@ -842,9 +839,14 @@ ul.timeline > li p, ul.timeline > li > ul >li{
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
-  .links-acesso-rapido .col-md {
-    padding-right: 0;
-    width: 49%;
+  .links-acesso-rapido{
+      background: none;
+      height: 426px;
+  }
+
+  .links-acesso-rapido .card {
+      margin-left: 5%;
+      margin-bottom: 5%;
   }
 
   .links-acesso-rapido .br-card {
@@ -886,8 +888,8 @@ ul.timeline > li p, ul.timeline > li > ul >li{
   }
 
   .transmissoes .link-mais-transmissoes a {
-    margin: -40px 0 0 -25px;
-    left: 37%;
+    margin: -42px 0 0 -25px;
+    left: 64%;
   }
 
   .transmissoes .card-content img {
