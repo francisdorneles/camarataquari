@@ -470,24 +470,7 @@ ul.timeline > li p, ul.timeline > li > ul >li{
     text-align: right;
 }
 
-@media only screen and (max-width: 991px) {
-    .main-timeline .date-content {
-        margin-top: 35px
-    }
-    .main-timeline .date-content:before {
-        width: 22.5%
-    }
-    .main-timeline .timeline-content {
-        padding: 10px 30px 10px 30px
-    }
-    .main-timeline .title {
-        font-size: 17px
-    }
-    .main-timeline .timeline:nth-child(2n) .timeline-content ul{
-        padding: 10px 0px 10px 0;
-        direction: rtl;
-    }
-}
+
 
 
 /* fim timeline */
@@ -874,12 +857,8 @@ ul.timeline > li p, ul.timeline > li > ul >li{
   .noticias .card-content img{
     width: 50%;
   }
-  .main-timeline .timeline-content,
-    .main-timeline .timeline:nth-child .timeline-content ul{
-        direction: unset;
-    }
 
-  .main-timeline:before {
+  /*.main-timeline:before {
         margin: 0;
         left: 7px
     }
@@ -915,10 +894,16 @@ ul.timeline > li p, ul.timeline > li > ul >li{
     .main-timeline .year {
         font-size: 24px
     }
-
+    .main-timeline .timeline-content,
+    .main-timeline .timeline .timeline-content ul{
+        width: 95%;
+        text-align: center;
+        padding: 10px 0;
+        direction: unset;
+    }
     .main-timeline .title {
         margin-bottom: 10px
-    }
+    }*/
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -934,6 +919,53 @@ ul.timeline > li p, ul.timeline > li > ul >li{
   .banner .banner-img{
     margin-left: 0%;
   }
+
+  /*.main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .main-timeline .icon {
+        margin: auto 0
+    }
+    .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 0
+    }
+    .main-timeline .date-content:before {
+        display: none
+    }
+    .main-timeline .date-outer {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date-outer:before,
+    .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date {
+        top: 30%
+    }
+    .main-timeline .year {
+        font-size: 24px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline .timeline-content ul{
+        width: 95%;
+        text-align: center;
+        padding: 10px 0;
+        direction: unset;
+    }
+    .main-timeline .title {
+        margin-bottom: 10px
+    }*/
 }
 
 /* (1280x720) Galaxy Note 2, WXGA */
@@ -942,9 +974,22 @@ ul.timeline > li p, ul.timeline > li > ul >li{
   .links-acesso-rapido .br-card {
     width: 130px;
   }
-    .main-timeline .timeline-content,
-    .main-timeline .timeline:nth-child .timeline-content ul{
-        direction: unset;
+
+    .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .main-timeline .date-content:before {
+        width: 22.5%
+    }
+    .main-timeline .timeline-content {
+        padding: 10px 30px 10px 30px
+    }
+    .main-timeline .title {
+        font-size: 17px
+    }
+    .main-timeline .timeline:nth-child(2n) .timeline-content ul{
+        padding: 10px 0px 10px 0;
+        direction: rtl;
     }
 
 }
@@ -978,6 +1023,7 @@ ul.timeline > li p, ul.timeline > li > ul >li{
     /* insert styles here */
 
 }
+
 
 
 
