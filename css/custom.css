@@ -1,3 +1,7 @@
+body{
+    font-family: "Lato";
+}
+
 .main-content a {
   text-decoration: none;
 }
@@ -800,7 +804,7 @@ ul.timeline > li p, ul.timeline > li > ul >li{
 
 
 .about-list label {
-  color: #20247b;
+  color: #000000;
   font-weight: 600;
   width: 96px;
   margin: 0;
