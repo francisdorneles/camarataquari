@@ -626,6 +626,14 @@ ul.timeline > li p, ul.timeline > li > ul >li{
 /* fim footer */
 
 
+/* inicio carta servicos*/
+
+.cartaservicos .info{
+    background: #ededee;
+}
+
+/* inicio carta servicos*/
+
 /* formulario contato */
 .contato .contato-informacoes .contato-subtitulo-2 {
   margin-bottom: 40px;
