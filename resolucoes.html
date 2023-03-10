@@ -4,7 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Template básico</title>
+    <title>Câmara Municipal de Taquari</title>
+
     <!-- Fonte Rawline-->
     <link rel="stylesheet" href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
     <!-- Fonte Raleway-->
@@ -17,31 +18,33 @@
   <body>
     <div class="template-base">
       <nav class="br-skiplink">
-        <a class="br-item" href="#main-content" accesskey="1">Ir para o conteúdo (1/4)
+        <a class="br-item" href="#main-content" accesskey="1">Ir para o conteúdo (1/3)
             <span class="br-tag text ml-1">1</span>
         </a>
-        <a class="br-item" href="#header-navigation" accesskey="2">Ir para o menu (2/4) 
+        <a class="br-item" href="#header-navigation" accesskey="2">Ir para o menu (2/3)
           <span class="br-tag text ml-1">2</span>
-        </a>          
-        <a class="br-item" href="#footer" accesskey="4">Ir para o rodapé (3/4) 
-          <span class="br-tag text ml-1">4</span>
+        </a>
+        <a class="br-item" href="#footer" accesskey="4">Ir para o rodapé (3/3)
+          <span class="br-tag text ml-1">3</span>
         </a>
       </nav>
-      <header class="br-header mb-4" id="header" data-sticky="data-sticky">
+      <header class="br-header" id="header" data-sticky="data-sticky">
         <div class="container-lg">
           <div class="header-top">
             <div class="header-logo">
-              <img src="assets/logo.png" alt="logo"/>              
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="Logo"/>
+              </a>
             </div>
-            <div class="header-actions">
+            <div class="header-actions ">
               <div class="header-links dropdown">
                 <button class="br-button circle small" type="button" data-toggle="dropdown" aria-label="Abrir Acesso Rápido"><i class="fas fa-ellipsis-v" aria-hidden="true"></i></button>
                 <div class="br-list">
                   <div class="header">
                     <div class="title">Acesso Rápido</div>
-                  </div><a class="br-item" href="javascript:void(0)">Sessões ao Vivo</a><a class="br-item" href="javascript:void(0)">Webmail</a><a class="br-item" href="javascript:void(0)">Contato</a>
+                  </div><a class="br-item" href="https://www.youtube.com/@camarataquari9681/streams">Sessões ao Vivo</a><a class="br-item" href="https://www.youtube.com/@camarataquari9681/streams">Webmail</a><a class="br-item" href="contato.html">Contato</a><a class="br-item" href="sessao.html">Sessão</a>
                 </div>
-              </div>                                          
+              </div>
             </div>
           </div>
           <div class="header-bottom">
@@ -52,20 +55,27 @@
               </div>
               <div class="header-info">
                 <div class="header-title">Câmara Municipal de Taquari</div>
-                <div class="header-subtitle">Poder Legislativo do município de Taquari</div>
+                <div class="header-subtitle">Poder Legislativo do Município de Taquari</div>
               </div>
-            </div>                 
+            </div>
+            <div class="header-social-network">
+              <a class="br-button circle" target="_blank" href="https://www.facebook.com/camaravereadorestaquari" aria-label="Compartilhar por Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              <a class="br-button circle" target="_blank" href="https://www.instagram.com/camarataquari/?hl=pt" aria-label="Compartilhar por Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              <a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            </div>
           </div>
         </div>
       </header>
-      <main class="d-flex flex-fill mb-5" id="main">
-        <div class="container-lg">
+      <main class="d-flex flex-fill" id="main">
+        <div class="container-lg d-flex">
           <div class="row">
             <div class="br-menu" id="main-navigation">
               <div class="menu-container">
                 <div class="menu-panel">
                   <div class="menu-header">
-                    <div class="menu-title"><img src="assets/logo.png" alt="Imagem ilustrativa"/><span>Câmara Municipal de Taquari</span></div>
+                    <a href="index.html">
+                      <div class="menu-title"><img src="assets/img/logo.png" alt="Logo"/><span>Câmara Municipal de Taquari</span></div>
+                    </a>
                     <div class="menu-close">
                       <button class="br-button circle" type="button" aria-label="Fechar o menu" data-dismiss="menu"><i class="fas fa-times" aria-hidden="true"></i></button>
                     </div>
@@ -74,42 +84,69 @@
                     <div class="menu-folder">
                       <a class="menu-item" href="javascript: void(0)"><span class="content">Institucional</span></a>
                       <ul>
-                        <li><a href="contato.html" class="menu-item" href="javascript: void(0)"><span class="content">Fale com a Câmara</span></a></li>
-                        <li><a href="mesa-diretora.html" class="menu-item"><span class="content">Mesa Diretora</span></a></li>
-                        <li><a href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria" class="menu-item"></span><span class="content">Ouvidoria</span></a></li>							
+                        <li><a href="camara.html" class="menu-item" href="javascript: void(0)"><span class="content">A Câmara</span></a></li>
+                        <li><a href="historicovereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Histórico de Vereadores</span></a></li>
+                        <li><a href="cartaservicos.html" class="menu-item" href="javascript: void(0)"><span class="content">Carta de Serviços</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/servidoresLotacao/servidores"></span><span class="content">Quadro de Servidores</span></a></li>
                       </ul>
                     </div>
                     <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Transparência</span></a>
                       <ul>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Portal da Transparência</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Acesso à Informação</span></a></li>							  
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Receitas e Despesas</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia"><span class="content">Portal da Transparência</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formulario"><span class="content">Acesso à Informação</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/despesas"><span class="content">Despesas</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/receitas"><span class="content">Receitas</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/diarias"><span class="content">Diárias</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/patrimonio"><span class="content">Patrimônio</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/pessoal/folhaLotacao/servidores"><span class="content">Folha de Pagamento</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/transparencia/fiscal"><span class="content">Publicações Legais</span></a></li>
+                        <li><a class="menu-item" href="https://portal.tce.rs.gov.br/aplicprod/f?p=50500:4:::NO::F50500_CD_ORGAO:61301&cs=17mAjOzYwNhwnVVoSkXvi9Cgkg_M"><span class="content">Licitações</span></a></li>
+
                       </ul>
                     </div>
                     <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Vereadores</span></a>
                       <ul>
-                        <li><a href="vereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Quem são</span></a></li>							  							  
+                        <li><a href="vereadores.html" class="menu-item" href="javascript: void(0)"><span class="content">Vereadores(as) em Exercício</span></a></li>
+                        <li><a class="menu-item" href="mesa-diretora.html"><span class="content">Mesa Diretora</span></a></li>
+                        <li><a class="menu-item" href="comissoes.html"><span class="content">Comissôes</span></a></li>
                       </ul>
                     </div>
                     <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Atividade Parlamentar</span></a>
                       <ul>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Leis</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Decretos</span></a></li>							  
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Indicações</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Requerimentos</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Atas</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Projetos em Tramitação</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Pauta da Sessão</span></a></li>
-                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Resoluções</span></a></li>
+                        <li><a class="menu-item" href="https://camarataquari.cespro.com.br/"><span class="content">Leis</span></a></li>
+                        <li><a class="menu-item" href="decretos.html"><span class="content">Decreto Legislativo</span></a></li>
+                        <li><a class="menu-item" href="ordemdodia.html"><span class="content">Ordem do Dia</span></a></li>
+                        <li><a class="menu-item" href="pautacomissao.html"><span class="content">Pauta da Comissão</span></a></li>
+                        <li><a class="menu-item" href="pequenoexpediente.html"><span class="content">Pequeno Expediente</span></a></li>
+                        <li><a class="menu-item" href="proposicoes.html"><span class="content">Proposições</span></a></li>
+                        <!--<li>
+                          <li><a class="menu-item" href="javascript: void(0)"><span class="content">Projetos</span></a>
+                            <ul>
+                              <li><a class="menu-item" href="decretos.html"><span class="content">Projetos de Decretos Legislativos</span></a></li>
+                              <li><a class="menu-item" href="resolucoes.html"><span class="content">Projetos de Resoluções</span></a></li>
+                              <li><a class="menu-item" href="resolucoes.html"><span class="content">Projetos de Leis</span></a></li>
+                            </ul>
+                          </li>
+                        </li>-->
+                        <li><a class="menu-item" href="indicacoes.html"><span class="content">Indicações</span></a></li>
+                        <li><a class="menu-item" href="requerimentos.html"><span class="content">Requerimentos</span></a></li>
+                        <li><a class="menu-item" href="atas.html"><span class="content">Atas</span></a></li>
+                        <li><a class="menu-item" href="https://www.youtube.com/@camarataquari9681/streams"><span class="content">Sessôes</span></a></li>
+
                       </ul>
                     </div>
-                  </nav>                  
-                                                   
+                    <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Contato</span></a>
+                      <ul>
+                        <li><a class="menu-item" href="contato.html"><span class="content">Fale com a Câmara</span></a></li>
+                        <li><a class="menu-item" href="https://cmtaquari.cittaweb.com.br/citta/#/sic/formularioOuvidoria"></span><span class="content">Ouvidoria</span></a></li>
+                      </ul>
+                    </div>
+                  </nav>
+
                 </div>
                 <div class="menu-scrim" data-dismiss="menu" tabindex="0"></div>
               </div>
             </div>
-           <div class="col mb-5">
               <div class="main-content pl-sm-3 mb-5 mt-5" id="main-content">              
                 <div class="row resolucoes">
                   <div class="col-12">

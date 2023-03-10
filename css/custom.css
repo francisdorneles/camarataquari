@@ -630,6 +630,7 @@ ul.timeline > li p, ul.timeline > li > ul >li{
 
 .cartaservicos .duvida{
     background: #ededee;
+    max-height: 312px;
 }
 
 .cartaservicos .info{
