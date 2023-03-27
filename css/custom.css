@@ -475,6 +475,22 @@ ul.timeline > li p, ul.timeline > li > ul >li{
 
 /* fim timeline */
 
+
+/* foto vereadores index */
+.foto-vereadores{
+  background: url(../assets/img/vereadores.jpg) center center no-repeat;  
+  margin-left: calc(-49.5vw + 50%);
+  margin-right: calc(-49.5vw + 50%);
+  height: 470px;
+  background-size: 1625px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right, left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 /* inicio noticias */
 
 .b-0 {
